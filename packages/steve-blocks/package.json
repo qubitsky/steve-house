@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "schema": "ts-node scripts/schema.ts",
+    "docgen": "ts-node scripts/docgen.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
   "devDependencies": {
     "@types/react": "^17.0.8",
     "react": "^17.0.2",
+    "react-docgen-typescript": "^2.0.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2",
     "typescript-json-schema": "^0.50.1"

@@ -2,9 +2,7 @@ import { resolve } from 'path';
 import * as TJS from 'typescript-json-schema';
 import { existsSync, readdirSync, mkdirSync, writeFileSync } from 'fs';
 import { compilerOptions } from '../tsconfig.json';
-
-const componentsDir = resolve(__dirname, '../components');
-const distDir = resolve(__dirname, '../dist');
+import { componentsDir, distDir } from './paths';
 
 const dirs = readdirSync(componentsDir);
 const fulldirs = dirs.map((dir) => resolve(componentsDir, dir));
